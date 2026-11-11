@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ACME Foundation // Living Systems & Spec-First Engineering</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              bg: '#0a0d14',
+              surface: '#111726',
+              border: '#1f293d',
+              accent: '#38bdf8',
+              copper: '#fb923c'
+            }
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-brand-bg text-slate-300 font-sans antialiased min-h-screen flex flex-col justify-between selection:bg-brand-accent selection:text-black">
+
+  <header class="border-b border-brand-border bg-brand-surface/40 backdrop-blur sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+      <div class="flex items-center space-x-3">
+        <span class="text-xl font-mono font-bold tracking-tight text-white flex items-center gap-2">
+          <span class="w-3 h-3 rounded-full bg-brand-accent animate-pulse"></span>
+          ACME // FOUNDATION
+        </span>
+      </div>
+      <div class="flex items-center space-x-4 text-xs font-mono">
+        <span class="px-2.5 py-1 rounded border border-emerald-500/30 bg-emerald-500/10 text-emerald-400">STATUS: OPERATIONAL</span>
+        <a href="https://github.com/acme-foundation" target="_blank" class="text-slate-400 hover:text-white transition">GitHub ↗</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="max-w-6xl mx-auto px-6 py-16 flex-1">
+    <div class="max-w-3xl mb-16">
+      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-brand-border bg-brand-surface text-brand-accent text-xs font-mono mb-6">
+        <span>Zero Degrees of Freedom (DoF=0)</span> • <span>Living Specifications</span>
+      </div>
+      <h1 class="text-4xl sm:text-5xl font-extrabold text-white tracking-tight leading-tight mb-6">
+        Autonomous Engineering & <br>
+        <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-accent to-brand-copper">Deterministik Sistem Mimarisi.</span>
+      </h1>
+      <p class="text-slate-400 text-lg leading-relaxed">
+        Geleneksel yazılım geliştirme entropisini sıfırlayan anayasal şartname motoru (AUP), temiz oda izolasyonu ve dikey teknoloji laboratuvarları portföyü.
+      </p>
+    </div>
+
+    <h2 class="text-xs font-mono uppercase tracking-wider text-slate-500 mb-6">Federe Vitrinler & Dikey Şantiyeler</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+      <div class="p-6 rounded-xl border border-brand-border bg-brand-surface/60 hover:border-brand-accent/50 transition flex flex-col justify-between group">
+        <div>
+          <div class="text-2xl mb-4">🎮</div>
+          <h3 class="text-lg font-bold text-white group-hover:text-brand-accent transition mb-2">Arcade & 2.5D Studio</h3>
+          <p class="text-sm text-slate-400 leading-relaxed mb-4">
+            Carrier Air Wing re-engineering, izometrik kamera matrisleri ve Three.js tabanlı deterministik oyun motoru şantiyesi.
+          </p>
+        </div>
+        <div class="pt-4 border-t border-brand-border/60 flex items-center justify-between text-xs font-mono">
+          <span class="text-slate-500">repo: caw</span>
+          <a href="./caw/" class="text-brand-accent hover:underline flex items-center gap-1">Vitrine Git ↗</a>
+        </div>
+      </div>
+
+      <div class="p-6 rounded-xl border border-brand-border bg-brand-surface/60 hover:border-brand-copper/50 transition flex flex-col justify-between group">
+        <div>
+          <div class="text-2xl mb-4">🎬</div>
+          <h3 class="text-lg font-bold text-white group-hover:text-brand-copper transition mb-2">Premier Studio & Cadence</h3>
+          <p class="text-sm text-slate-400 leading-relaxed mb-4">
+            Bikepacking ve outdoor medyası için akıllı kayıpsız montaj (stream-copy), GPX telemetri füzyonu ve otonom video derleyicisi.
+          </p>
+        </div>
+        <div class="pt-4 border-t border-brand-border/60 flex items-center justify-between text-xs font-mono">
+          <span class="text-slate-500">repo: premier-studio</span>
+          <a href="./premier-studio/" class="text-brand-copper hover:underline flex items-center gap-1">Vitrine Git ↗</a>
+        </div>
+      </div>
+
+      <div class="p-6 rounded-xl border border-brand-border bg-brand-surface/60 hover:border-emerald-500/50 transition flex flex-col justify-between group">
+        <div>
+          <div class="text-2xl mb-4">🛡️</div>
+          <h3 class="text-lg font-bold text-white group-hover:text-emerald-400 transition mb-2">Enterprise Security & NAC</h3>
+          <p class="text-sm text-slate-400 leading-relaxed mb-4">
+            Sıfır-Güven (Zero Trust) ağ erişim kontrolü, brownfield mimari denetimi ve anayasal devre kesici (circuit breaker) protokolleri.
+          </p>
+        </div>
+        <div class="pt-4 border-t border-brand-border/60 flex items-center justify-between text-xs font-mono">
+          <span class="text-slate-500">repo: acme-core</span>
+          <span class="text-slate-500 italic">Devam Ediyor</span>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="mt-16 p-6 rounded-xl border border-brand-border bg-brand-surface/30">
+      <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 font-mono text-xs text-slate-400">
+        <div>
+          <span class="text-white font-bold">LEX OPERANDI:</span> Nullum Iudicium Sine Lege
+        </div>
+        <div class="flex gap-4">
+          <span>• Invariant Checked</span>
+          <span>• Merkle Audited</span>
+          <span>• Static Purity</span>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="border-t border-brand-border bg-brand-surface/20 py-8 text-center text-xs font-mono text-slate-600">
+    <div class="max-w-6xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-2">
+      <div>© 2026 ACME Foundation. All rights reserved.</div>
+      <div class="text-slate-500">Autonomous R&D and Systems Architecture</div>
+    </div>
+  </footer>
+
+</body>
+</html>
